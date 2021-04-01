@@ -52,11 +52,13 @@ textarea{
 .present {
   background-color: #ff6961;
   color: white;
+  width: 80%;
 }
 
 .future {
   background-color: #77dd77;
   color: white;
+  width: 80%;
 }
 
 .saveBtn {
