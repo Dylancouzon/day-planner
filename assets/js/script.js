@@ -3,7 +3,7 @@ var TimeRange = [9, 17];
 var storagePosition = 0;
 var storedTasks = JSON.parse(localStorage.getItem("tasks"));
 if(!storedTasks){
-  var storedTasks = ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"];
+  var storedTasks = ["", "", "", "", "", "", "", "", ""];
 }
 // Show the current day
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
@@ -12,6 +12,7 @@ $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 var generatePlanner = function () {
     for (i = TimeRange[0]; i <= TimeRange[1]; i++) {
 
+        // Creates all the element of each row
         var form = $('<form>');
         form.attr('data-hour-index', storagePosition);
 
@@ -22,8 +23,10 @@ var generatePlanner = function () {
         time.addClass('hour').text(moment(i, "H").format('h a'));
 
         var textarea = $('<textarea>');
-        textarea.text("testttt");
-
+        // Get the txt from Local Storage
+        textarea.text(storedTasks[storagePosition]);
+        
+        // Give a class of past/present/future depending on the time of the day
         if (i < moment().format('H')) {
             textarea.addClass('past');
         } else if (i == moment().format('H')) {
