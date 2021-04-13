@@ -1,4 +1,4 @@
-# Code-quizz
+# Work Day Scheduler
 Homework due 2021-3-23
 
 ![Site](./assets/imgs/screenshot.png)
