@@ -1,7 +1,11 @@
-# Work Day Scheduler
-Homework due 2021-3-23
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
 
-![Site](./assets/imgs/screenshot.png)
+# Work Day Scheduler
+Realized for UC Berkeley Extension Coding Bootcamp
+<br>
+<br>
+
+![Site](./assets/imgs/day_scheduler.gif)
 
 <br>
 
